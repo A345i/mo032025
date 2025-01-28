@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Съезд работников скорой медицинской помощи 2025</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .parallax {
             background-attachment: fixed;
@@ -13,163 +14,245 @@
             background-size: cover;
             min-height: 600px;
         }
+
         .hero-section {
             background-image: url('img/ambulance.jpg');
         }
+
         .topics-section {
             background-image: url('img/doctors-team.jpg');
         }
+
         .registration-section {
             background-image: url('img/conference-hall.jpg');
         }
+
         .overlay {
             background-color: rgba(0,0,0,0.7);
         }
+
         .logo-list {
-            list-style: none;
+            
             padding-left: 0;
         }
-        .logo-list li {
-            margin-bottom: 1rem;
+
+            
+
+        .highlight-btn {
+            border: 2px solid #f00;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+            }
         }
     </style>
 </head>
 <body>
 
-<!-- Hero Section -->
-<section class="parallax hero-section text-white">
-    <div class="overlay">
-        <div class="container py-5">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h1 class="display-4 mb-4">I Съезд работников скорой медицинской помощи</h1>
-                    <h3 class="mb-4">24–25 апреля 2025 года</h3>
-                    <a href="#registration" class="btn btn-danger btn-lg">Пройти регистрацию</a>
-                    <p class="mt-4">Окончание регистрации: 17 апреля 2025</p>
+    <!-- Hero Section -->
+    <section class="parallax hero-section text-white">
+        <div class="overlay">
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="img/logo.png" alt="Логотип" class="me-3" style="max-width: 100px;">
+                            <h1 class="display-4 mb-0">
+                                <span style="font-family: 'Times New Roman', serif;">
+                                    I Съезд работников скорой медицинской помощи
+                                </span>
+                            </h1>
+                        </div>
+                        <h3 class="mb-4">24–25 апреля 2025 года</h3>
+                        <a href="#registration" class="btn btn-danger btn-lg highlight-btn">Пройти регистрацию</a>
+                        <p class="mt-4">Окончание регистрации: 17 апреля 2025</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- About Section -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">О мероприятии</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Формат проведения</h4>
-                <p>Гибридный формат (очный с онлайн трансляцией)</p>
-                <h4>Место проведения</h4>
-                <p>Дом Правительства Московской области<br>
-                г. Красногорск, бульвар Строителей, 1</p>
-                <h4>Онлайн-трансляция</h4>
-                <p>Платформа mts.link.ru</p>
-            </div>
-            <div class="col-md-6">
-                <h4>Организаторы</h4>
-                <ul class="logo-list">
-                    <li>Правительство Московской области</li>
-                    <li>Минздрав РФ</li>
-                    <li>Минздрав Московской области</li>
-                    <li>Первый Санкт-Петербургский ГМУ им. Павлова</li>
-                    <li>Московская областная станция СМП</li>
-                    <li>Всероссийский центр медицины катастроф «Защита»</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Topics Section -->
-<section class="parallax topics-section text-white">
-    <div class="overlay">
-        <div class="container py-5">
-            <h2 class="text-center mb-5">Основные темы</h2>
+    <!-- About Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">О мероприятии</h2>
             <div class="row">
                 <div class="col-md-6">
+                    <h4><i class="fas fa-chalkboard-teacher me-2"></i>Формат проведения</h4>
+                    <p>Гибридный формат (очный с онлайн трансляцией)</p>
+                    <h4><i class="fas fa-map-marker-alt me-2"></i>Место проведения</h4>
+                    <p>
+                        Дом Правительства Московской области<br>
+                        г. Красногорск, бульвар Строителей, 1
+                    </p>
+                    <h4><i class="fas fa-video me-2"></i>Онлайн-трансляция</h4>
+                    <p>Платформа mts.link.ru</p>
+                </div>
+                <div class="col-md-6">
+                    <h4><i class="fas fa-users me-2"></i>Организаторы</h4>
+                    <ul class="logo-list">
+                        <li>Правительство Московской области</li>
+                        <li>Министерство здравоохранения Российской Федерации</li>
+                        <li>Министерство здравоохранения Московской области</li>
+                        <li>ФГБОУ ВО «Первый Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова Министерства здравоохранения Российской Федерации</li>
+                        <li>ГБУЗ МО «Московская областная станция скорой медицинской помощи»</li>
+                        <li>ФГБУ «Всероссийский центр медицины катастроф «Защита» Федерального медико-биологического агентства России</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="parallax topics-section text-white">
+        <div class="overlay">
+            <div class="container py-5">
+                <h2 class="text-center mb-5">Основные темы</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><i class="fas fa-stethoscope me-2"></i>Перспективное развитие СМП</li>
+                            <li><i class="fas fa-heartbeat me-2"></i>Болезни системы кровообращения</li>
+                            <li><i class="fas fa-child me-2"></i>Неотложная педиатрия</li>
+                            <li><i class="fas fa-clinic-medical me-2"></i>Клинические аспекты острых состояний</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><i class="fas fa-procedures me-2"></i>Тяжелая сочетанная травма</li>
+                            <li><i class="fas fa-laptop-medical me-2"></i>Информационные технологии в СМП</li>
+                            <li><i class="fas fa-female me-2"></i>Акушерские и гинекологические патологии</li>
+                            <li><i class="fas fa-first-aid me-2"></i>Организационные вопросы первой помощи</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thesis Section -->
+    <section class="py-5">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><i class="fas fa-compact-disc me-2"></i> Публикация тезисов</h2>
+                    <p>В плане подготовки работы Съезда планируется издание сборника тезисов на CD-диске. Публикация тезисов Съезда бесплатная.</p>
+                    <p class="lead text-primary"><strong>Тезисы Съезда принимаются для публикации до 21 марта 2025 года включительно.</strong></p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><i class="fas fa-file-alt me-2"></i>Требования</h4>
                     <ul>
-                        <li>Перспективное развитие СМП</li>
-                        <li>Болезни системы кровообращения</li>
-                        <li>Неотложная педиатрия</li>
-                        <li>Клинические аспекты острых состояний</li>
+                        <li>Формат: MS Word (.doc)</li>
+                        <li>Объем: до 2 страниц</li>
+                        <li>Срок подачи: до 21 марта 2025</li>
+                        <li>Отправка на: <a href="mailto:conference@mo03.ru">conference@mo03.ru</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
+                    <h4><i class="fas fa-pencil-ruler me-2"></i>Оформление</h4>
                     <ul>
-                        <li>Тяжелая сочетанная травма</li>
-                        <li>Информационные технологии в СМП</li>
-                        <li>Акушерские и гинекологические патологии</li>
-                        <li>Организационные вопросы первой помощи</li>
+                        <li>Шрифт Times New Roman 14pt</li>
+                        <li>Межстрочный интервал 2.0</li>
+                        <li>Поля: верх/низ 20мм, левое 30мм, правое 10мм</li>
+                        <li>Без таблиц и изображений</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
+
+                <div class="accordion mt-2" id="thesisAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="fas fa-info-circle me-2"></i><strong>Подробные правила оформления тезисов</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#thesisAccordion">
+                            <div class="accordion-body">
+                                <p><strong>Правила оформления тезисов для публикации в сборнике:</strong></p>
+                                <ol>
+                                    <li>Тезисы представляются в электронном виде. Документ должен быть выполнен в формате MS Word (принимаются файлы ТОЛЬКО с расширением doc).</li>
+                                    <li>Имя файла, отправляемого по е-mail, пишется русскими буквами и состоит из фамилии и инициалов первого автора, например, «Иванов И.И.». Тема письма – «тезисы на Съезд СМП- 2025».</li>
+                                    <li>Тезисы c телефонами контактного лица направлять по электронному адресу: conference@mo03.ru</li>
+                                </ol>
+
+                                <p><strong>Оформление тезисов:</strong></p>
+                                <ol>
+                                    <li>Формат страницы А4 (210×297 мм). Работы должны быть напечатаны шрифтом TimesNewRoman, 14 кеглем, через два интервала с полями сверху – 20 мм, слева – 30 мм, справа – 10 мм, снизу – 20 мм.</li>
+                                    <li>На первой строчке печатаются с выравниванием по центру фамилия автора (ов) и инициалы. На второй строчке прописными буквами печатается название тезисов, шрифт жирный, выравнивание по центру. На третьей строчке печатается с выравниванием по центру полное название организации, которую представляет автор тезисов, с города и страны, где находится эта организация. Затем после пустой строки печатается текст тезисов. Рисунки, таблицы, графические изображения не публикуются.</li>
+                                    <li>После текста тезисов печатаются ссылки на литературные источники, которые оформляются в соответствии с правилами библиографического описания и с требованиями к научным публикациям. Ссылки, напечатанные не по указанным правилам, не публикуются.</li>
+                                    <li>Тезисы докладов должны быть тщательно выверены и отредактированы. Максимальный объем тезисов – 2 страницы. Тезисы, превышающие указанный объем, не рассматриваются. От одного автора (в качестве первого автора) принимается только одна статья и не более четырех статей в соавторстве.</li>
+                                </ol>
+
+                                <p><strong>Автор (соавторы) предоставляют издателю следующие права:</strong></p>
+                                <ol>
+                                    <li>право на воспроизведение работы без ограничения тиража экземпляров;</li>
+                                    <li>право на опубликование, обнародование, доведение до всеобщего сведения, дублирование, тиражирование или иное размножение произведения;</li>
+                                    <li>право на распространение произведения любым способом, в том числе через Интернет;</li>
+                                    <li>право на публичное использование и демонстрацию произведения в информационных и прочих целях;</li>
+                                    <li>право на внесение редакторских изменений;</li>
+                                    <li>право на использование метаданных (название, имя автора (правообладателя), аннотации и пр.) произведения путем обработки и систематизации, а также включения в различные базы данных и информационные системы (для повышения индекса цитирования статей);</li>
+                                    <li>авторам (соавторам) вознаграждение не выплачивается;</li>
+                                    <li>поступление тезисов в редакцию подтверждает полное согласие автора (соавторов) с правилами публикации в сборнике, которое может быть оформлено следующей фразой в конце статьи: «Автор (соавторы) подтверждают полное согласие с требованиями к материалам для публикации». После чего следуют подписи ВСЕХ авторов тезисов;</li>
+                                    <li>в обязательном порядке прикладывается направление (разрешение на печать) от всех организаций, в которых работают авторы (соавторы).</li>
+                                </ol>
+
+                                <p><strong>Оргкомитет имеет право отказать в публикации материалов (тезисов) Конгресса, не соответствующих тематике Конгресса и требованиям технического оформления.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </section>
 
-<!-- Thesis Section -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Публикация тезисов</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Требования</h4>
-                <ul>
-                    <li>Формат: MS Word (.doc)</li>
-                    <li>Объем: до 2 страниц</li>
-                    <li>Срок подачи: до 21 марта 2025</li>
-                    <li>Отправка на: conference@mo03.ru</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h4>Оформление</h4>
-                <ul>
-                    <li>Шрифт Times New Roman 14pt</li>
-                    <li>Межстрочный интервал 2.0</li>
-                    <li>Поля: верх/низ 20мм, левое 30мм, правое 10мм</li>
-                    <li>Без таблиц и изображений</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Registration Section -->
-<section class="parallax registration-section text-white" id="registration">
-    <div class="overlay">
-        <div class="container py-5">
-            <div class="text-center">
-                <h2 class="mb-4">Регистрация на мероприятие</h2>
-                <p class="lead mb-4">Для участия обязательна предварительная регистрация</p>
-                <a href="#" class="btn btn-danger btn-lg">Зарегистрироваться сейчас</a>
-                <div class="mt-4">
-                    <h5>Рекомендуемые отели</h5>
-                    <p>Hampton by Hilton Moscow Strogino (Москва)<br>
-                    Аквариум (Красногорск)</p>
+    <!-- Registration Section -->
+    <section class="parallax registration-section text-white" id="registration">
+        <div class="overlay">
+            <div class="container py-5">
+                <div class="text-center">
+                    <h2 class="mb-4"><i class="fas fa-user-edit me-2"></i>Регистрация на мероприятие</h2>
+                    <p class="lead mb-4">Для участия обязательна предварительная регистрация</p>
+                    <a href="#" class="btn btn-danger btn-lg highlight-btn">Зарегистрироваться сейчас</a>
+                    <div class="mt-4">
+                        <h5>Рекомендуемые отели</h5>
+                        <p>
+                            Hampton by Hilton Moscow Strogino (Москва)<br>
+                            Аквариум (Красногорск)
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h5>Контакты</h5>
-                <p>Email: conference@mo03.ru</p>
-                <p>Телефон: +7 (495) 123-45-67</p>
-            </div>
-            <div class="col-md-6">
-                <h5>Организационный комитет</h5>
-                <p>ГБУЗ МО «Московская областная станция скорой медицинской помощи»</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-envelope me-2"></i>Контакты</h5>
+                    <p>Email: conference@mo03.ru</p>
+                    <p>Телефон: +7 (495) 123-45-67</p>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fas fa-briefcase me-2"></i>Организационный комитет</h5>
+                    <p>ГБУЗ МО «Московская областная станция скорой медицинской помощи»</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
