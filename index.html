@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Съезд работников скорой медицинской помощи 2025</title>
+    <title>1-й Съезд работников скорой медицинской помощи 2025</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Анимации при прокрутке -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
     <style>
+        /* Параллакс и базовые стили */
         .parallax {
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             min-height: 600px;
+            position: relative;
         }
 
         .hero-section {
@@ -34,19 +36,52 @@
 
         .overlay {
             background-color: rgba(0,0,0,0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
-        .logo-list {
-            padding-left: 0;
+        /* Анимации */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-
-
-        .highlight-btn {
-            border: 2px solid #f00;
-            animation: pulse 1.5s infinite;
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
         }
 
+        /* Hover-эффекты */
+        .btn-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .btn-hover-effect:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+        /* Тени для текста */
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Иконки */
+        .icon-large {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        /* Анимация пульсации для кнопки */
         @keyframes pulse {
             0%, 100% {
                 box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
@@ -55,6 +90,11 @@
             50% {
                 box-shadow: 0 0 20px rgba(255, 0, 0, 1);
             }
+        }
+
+        .highlight-btn {
+            border: 2px solid #f00;
+            animation: pulse 1.5s infinite;
         }
     </style>
 </head>
@@ -66,17 +106,17 @@
             <div class="container py-5">
                 <div class="row text-center">
                     <div class="col-12">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
+                        <div class="d-flex justify-content-center align-items-center mb-4 fade-in-up">
                             <img src="img/logo.png" alt="Логотип" class="me-3" style="max-width: 100px;">
-                            <h1 class="display-6 mb-0 text-uppercase">
+                            <h1 class="display-6 mb-0 text-uppercase text-shadow">
                                 <span style="font-family: 'Times New Roman', serif;">
                                     I Съезд работников скорой медицинской помощи
                                 </span>
                             </h1>
                         </div>
-                        <h3 class="mb-4">24–25 апреля 2025 года</h3>
-                        <a href="#registration" class="btn btn-danger btn-lg highlight-btn">Пройти регистрацию</a>
-                        <p class="mt-4">Окончание регистрации: 17 апреля 2025</p>
+                        <h3 class="mb-4 text-shadow">24–25 апреля 2025 года</h3>
+                        <a href="#registration" class="btn btn-danger btn-lg highlight-btn btn-hover-effect">Пройти регистрацию</a>
+                        <p class="mt-4 text-shadow">Окончание регистрации: 17 апреля 2025</p>
                     </div>
                 </div>
             </div>
@@ -86,9 +126,9 @@
     <!-- About Section -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">О мероприятии</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up"><i class="fas fa-info-circle icon-large"></i>О мероприятии</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <h4><i class="fas fa-chalkboard-teacher me-2"></i>Формат проведения</h4>
                     <p>Гибридный формат (очный с онлайн трансляцией)</p>
                     <h4><i class="fas fa-map-marker-alt me-2"></i>Место проведения</h4>
@@ -99,7 +139,7 @@
                     <h4><i class="fas fa-video me-2"></i>Онлайн-трансляция</h4>
                     <p>Платформа mts.link.ru</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <h4><i class="fas fa-users me-2"></i>Организаторы</h4>
                     <ul class="logo-list">
                         <li>Правительство Московской области</li>
@@ -112,25 +152,25 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12 text-center bg-secondary text-white">
-                    <p class="lead">
+            <div class="row mt-4" data-aos="fade-up">
+                <div class="col-md-12 text-center bg-secondary text-white py-3">
+                    <p class="lead mb-0">
                         <strong>
                             <i class="fa-solid fa-bookmark me-2"></i> Документация по данному учебному мероприятию представлена в Комиссию по оценке учебных мероприятий и материалов для <strong>НМО</strong>
                         </strong>
                     </p>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
 
     <!-- Topics Section -->
     <section class="parallax topics-section text-white">
         <div class="overlay">
             <div class="container py-5">
-                <h2 class="text-center mb-5">Основные темы</h2>
+                <h2 class="text-center mb-5" data-aos="fade-up"><i class="fas fa-comments icon-large"></i>Основные темы</h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                         <ul>
                             <li class="fs-5"><i class="fas fa-stethoscope me-2"></i>Перспективное развитие СМП</li>
                             <li class="fs-5"><i class="fas fa-heartbeat me-2"></i>Болезни системы кровообращения</li>
@@ -138,7 +178,7 @@
                             <li class="fs-5"><i class="fas fa-clinic-medical me-2"></i>Клинические аспекты острых состояний</li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                         <ul>
                             <li class="fs-5"><i class="fas fa-procedures me-2"></i>Тяжелая сочетанная травма</li>
                             <li class="fs-5"><i class="fas fa-laptop-medical me-2"></i>Информационные технологии в СМП</li>
@@ -154,18 +194,16 @@
     <!-- Thesis Section -->
     <section class="py-5">
         <div class="container">
-            
+            <h2 class="text-center mb-5" data-aos="fade-up"><i class="fas fa-compact-disc icon-large"></i>Публикация тезисов</h2>
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2><i class="fas fa-compact-disc me-2"></i> Публикация тезисов</h2>
+                <div class="col-md-12 text-center" data-aos="fade-up">
                     <p class="lead">В плане подготовки работы Съезда планируется издание сборника тезисов на CD-диске. Публикация тезисов Съезда бесплатная.</p>
                     <p class="lead"><strong>Тезисы Съезда принимаются для публикации до 21 марта 2025 года включительно.</strong></p>
-
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row mt-4">
+                <div class="col-md-6" data-aos="fade-right">
                     <h4><i class="fas fa-file-alt me-2"></i>Требования</h4>
                     <ul>
                         <li>Формат: MS Word (.doc)</li>
@@ -174,7 +212,7 @@
                         <li>Отправка на: <a href="mailto:conference@mo03.ru">conference@mo03.ru</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <h4><i class="fas fa-pencil-ruler me-2"></i>Оформление</h4>
                     <ul>
                         <li>Шрифт Times New Roman 14pt</li>
@@ -185,60 +223,60 @@
                 </div>
             </div>
 
-                <div class="accordion mt-2" id="thesisAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <i class="fas fa-info-circle me-2 text-danger"></i><strong>Подробные правила оформления тезисов</strong>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#thesisAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Правила оформления тезисов для публикации в сборнике:</strong></p>
-                                <ol>
-                                    <li>Тезисы представляются в электронном виде. Документ должен быть выполнен в формате MS Word (принимаются файлы ТОЛЬКО с расширением doc).</li>
-                                    <li>Имя файла, отправляемого по е-mail, пишется русскими буквами и состоит из фамилии и инициалов первого автора, например, «Иванов И.И.». Тема письма – «тезисы на Съезд СМП- 2025».</li>
-                                    <li>Тезисы c телефонами контактного лица направлять по электронному адресу: conference@mo03.ru</li>
-                                </ol>
+            <div class="accordion mt-4" id="thesisAccordion" data-aos="fade-up">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <i class="fas fa-info-circle me-2 text-danger"></i><strong>Подробные правила оформления тезисов</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#thesisAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Правила оформления тезисов для публикации в сборнике:</strong></p>
+                            <ol>
+                                <li>Тезисы представляются в электронном виде. Документ должен быть выполнен в формате MS Word (принимаются файлы ТОЛЬКО с расширением doc).</li>
+                                <li>Имя файла, отправляемого по е-mail, пишется русскими буквами и состоит из фамилии и инициалов первого автора, например, «Иванов И.И.». Тема письма – «тезисы на Съезд СМП- 2025».</li>
+                                <li>Тезисы c телефонами контактного лица направлять по электронному адресу: conference@mo03.ru</li>
+                            </ol>
 
-                                <p><strong>Оформление тезисов:</strong></p>
-                                <ol>
-                                    <li>Формат страницы А4 (210×297 мм). Работы должны быть напечатаны шрифтом TimesNewRoman, 14 кеглем, через два интервала с полями сверху – 20 мм, слева – 30 мм, справа – 10 мм, снизу – 20 мм.</li>
-                                    <li>На первой строчке печатаются с выравниванием по центру фамилия автора (ов) и инициалы. На второй строчке прописными буквами печатается название тезисов, шрифт жирный, выравнивание по центру. На третьей строчке печатается с выравниванием по центру полное название организации, которую представляет автор тезисов, с города и страны, где находится эта организация. Затем после пустой строки печатается текст тезисов. Рисунки, таблицы, графические изображения не публикуются.</li>
-                                    <li>После текста тезисов печатаются ссылки на литературные источники, которые оформляются в соответствии с правилами библиографического описания и с требованиями к научным публикациям. Ссылки, напечатанные не по указанным правилам, не публикуются.</li>
-                                    <li>Тезисы докладов должны быть тщательно выверены и отредактированы. Максимальный объем тезисов – 2 страницы. Тезисы, превышающие указанный объем, не рассматриваются. От одного автора (в качестве первого автора) принимается только одна статья и не более четырех статей в соавторстве.</li>
-                                </ol>
+                            <p><strong>Оформление тезисов:</strong></p>
+                            <ol>
+                                <li>Формат страницы А4 (210×297 мм). Работы должны быть напечатаны шрифтом TimesNewRoman, 14 кеглем, через два интервала с полями сверху – 20 мм, слева – 30 мм, справа – 10 мм, снизу – 20 мм.</li>
+                                <li>На первой строчке печатаются с выравниванием по центру фамилия автора (ов) и инициалы. На второй строчке прописными буквами печатается название тезисов, шрифт жирный, выравнивание по центру. На третьей строчке печатается с выравниванием по центру полное название организации, которую представляет автор тезисов, с города и страны, где находится эта организация. Затем после пустой строки печатается текст тезисов. Рисунки, таблицы, графические изображения не публикуются.</li>
+                                <li>После текста тезисов печатаются ссылки на литературные источники, которые оформляются в соответствии с правилами библиографического описания и с требованиями к научным публикациям. Ссылки, напечатанные не по указанным правилам, не публикуются.</li>
+                                <li>Тезисы докладов должны быть тщательно выверены и отредактированы. Максимальный объем тезисов – 2 страницы. Тезисы, превышающие указанный объем, не рассматриваются. От одного автора (в качестве первого автора) принимается только одна статья и не более четырех статей в соавторстве.</li>
+                            </ol>
 
-                                <p><strong>Автор (соавторы) предоставляют издателю следующие права:</strong></p>
-                                <ol>
-                                    <li>право на воспроизведение работы без ограничения тиража экземпляров;</li>
-                                    <li>право на опубликование, обнародование, доведение до всеобщего сведения, дублирование, тиражирование или иное размножение произведения;</li>
-                                    <li>право на распространение произведения любым способом, в том числе через Интернет;</li>
-                                    <li>право на публичное использование и демонстрацию произведения в информационных и прочих целях;</li>
-                                    <li>право на внесение редакторских изменений;</li>
-                                    <li>право на использование метаданных (название, имя автора (правообладателя), аннотации и пр.) произведения путем обработки и систематизации, а также включения в различные базы данных и информационные системы (для повышения индекса цитирования статей);</li>
-                                    <li>авторам (соавторам) вознаграждение не выплачивается;</li>
-                                    <li>поступление тезисов в редакцию подтверждает полное согласие автора (соавторов) с правилами публикации в сборнике, которое может быть оформлено следующей фразой в конце статьи: «Автор (соавторы) подтверждают полное согласие с требованиями к материалам для публикации». После чего следуют подписи ВСЕХ авторов тезисов;</li>
-                                    <li>в обязательном порядке прикладывается направление (разрешение на печать) от всех организаций, в которых работают авторы (соавторы).</li>
-                                </ol>
+                            <p><strong>Автор (соавторы) предоставляют издателю следующие права:</strong></p>
+                            <ol>
+                                <li>право на воспроизведение работы без ограничения тиража экземпляров;</li>
+                                <li>право на опубликование, обнародование, доведение до всеобщего сведения, дублирование, тиражирование или иное размножение произведения;</li>
+                                <li>право на распространение произведения любым способом, в том числе через Интернет;</li>
+                                <li>право на публичное использование и демонстрацию произведения в информационных и прочих целях;</li>
+                                <li>право на внесение редакторских изменений;</li>
+                                <li>право на использование метаданных (название, имя автора (правообладателя), аннотации и пр.) произведения путем обработки и систематизации, а также включения в различные базы данных и информационные системы (для повышения индекса цитирования статей);</li>
+                                <li>авторам (соавторам) вознаграждение не выплачивается;</li>
+                                <li>поступление тезисов в редакцию подтверждает полное согласие автора (соавторов) с правилами публикации в сборнике, которое может быть оформлено следующей фразой в конце статьи: «Автор (соавторы) подтверждают полное согласие с требованиями к материалам для публикации». После чего следуют подписи ВСЕХ авторов тезисов;</li>
+                                <li>в обязательном порядке прикладывается направление (разрешение на печать) от всех организаций, в которых работают авторы (соавторы).</li>
+                            </ol>
 
-                                <p><strong>Оргкомитет имеет право отказать в публикации материалов (тезисов) Конгресса, не соответствующих тематике Конгресса и требованиям технического оформления.</strong></p>
-                            </div>
+                            <p><strong>Оргкомитет имеет право отказать в публикации материалов (тезисов) Конгресса, не соответствующих тематике Конгресса и требованиям технического оформления.</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
-</section>
+        </div>
+    </section>
 
     <!-- Registration Section -->
     <section class="parallax registration-section text-white" id="registration">
         <div class="overlay">
             <div class="container py-5">
                 <div class="text-center">
-                    <h2 class="mb-4"><i class="fas fa-user-edit me-2"></i>Регистрация на мероприятие</h2>
-                    <p class="lead mb-4">Для участия обязательна предварительная регистрация</p>
-                    <a href="#" class="btn btn-danger btn-lg highlight-btn">Зарегистрироваться сейчас</a>
-                    <div class="mt-4">
+                    <h2 class="mb-4" data-aos="fade-up"><i class="fas fa-user-edit icon-large"></i>Регистрация на мероприятие</h2>
+                    <p class="lead mb-4 text-shadow" data-aos="fade-up">Для участия обязательна предварительная регистрация</p>
+                    <a href="#" class="btn btn-danger btn-lg highlight-btn btn-hover-effect" data-aos="fade-up">Зарегистрироваться сейчас</a>
+                    <div class="mt-4" data-aos="fade-up">
                         <h5>Рекомендуемые отели</h5>
                         <p>
                             Hampton by Hilton Moscow Strogino (Москва)<br>
@@ -257,7 +295,6 @@
                 <div class="col-md-6">
                     <h5><i class="fas fa-envelope me-2"></i>Контакты</h5>
                     <p>Email: conference@mo03.ru</p>
-                    
                 </div>
                 <div class="col-md-6">
                     <h5><i class="fas fa-briefcase me-2"></i>Организационный комитет</h5>
@@ -268,5 +305,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- Анимации при прокрутке -->
+    <script>
+        AOS.init({
+            duration: 1000, // Длительность анимации
+            once: true, // Анимация только один раз
+        });
+    </script>
 </body>
 </html>
