@@ -1,0 +1,83 @@
+/* Параллакс и базовые стили */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+}
+
+.hero-section {
+    background-image: url('../img/ambulance.jpg');
+}
+
+.topics-section {
+    background-image: url('../img/doctors-team.jpg');
+}
+
+.registration-section {
+    background-image: url('../img/conference-hall.jpg');
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Hover-эффекты */
+.btn-hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .btn-hover-effect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+/* Тени для текста */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Иконки */
+.icon-large {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Анимация пульсации для кнопки */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+    }
+}
+
+.highlight-btn {
+    border: 2px solid #f00;
+    animation: pulse 1.5s infinite;
+}
