@@ -115,7 +115,7 @@
                             </h1>
                         </div>
                         <h3 class="mb-4 text-shadow">24–25 апреля 2025 года</h3>
-                        <a href="#registration" class="btn btn-danger btn-lg highlight-btn btn-hover-effect">Пройти регистрацию</a>
+                        <a href="#" class="btn btn-danger btn-lg highlight-btn btn-hover-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Пройти регистрацию</a>
                         <p class="mt-4 text-shadow">Окончание регистрации: 17 апреля 2025</p>
                     </div>
                 </div>
@@ -275,7 +275,47 @@
                 <div class="text-center">
                     <h2 class="mb-4" data-aos="fade-up"><i class="fas fa-user-edit icon-large"></i>Регистрация на мероприятие</h2>
                     <p class="lead mb-4 text-shadow" data-aos="fade-up">Для участия обязательна предварительная регистрация</p>
-                    <a href="#" class="btn btn-danger btn-lg highlight-btn btn-hover-effect" data-aos="fade-up">Зарегистрироваться сейчас</a>
+
+                    <a href="#" class="btn btn-danger btn-lg highlight-btn btn-hover-effect" data-aos="fade-up" data-bs-toggle="modal" data-bs-target="#registerModal">Зарегистрироваться сейчас</a>
+
+
+
+
+                </div>
+
+                <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="registerModalLabel">
+                                    <i class="fas fa-user-edit"></i> Регистрация на мероприятие: 
+                                    <span class="text-primary text-uppercase" style="font-family: 'Times New Roman', serif;">
+                                        <strong>I Съезд работников скорой медицинской помощи</strong>
+                                    </span>
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col-lg-8 mx-auto">
+                                        <script id="expodat__frame_js" src="https://expodat.com/onlinereg/profexpertus2025-v5/?lang=ru&task=frame_install"></script>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть окно регистрации</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="text-center">
                     <div class="mt-4" data-aos="fade-up">
                         <h5>Рекомендуемые отели</h5>
                         <p>
