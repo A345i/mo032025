@@ -81,3 +81,39 @@
     border: 2px solid #f00;
     animation: pulse 1.5s infinite;
 }
+
+/* Новые цвета */
+:root {
+    --custom-info: #3ab3ce; /* Новый цвет 1 */
+    --custom-primary: #071d32; /* Новый цвет 2 */
+    --custom-secondary: #134359; /* Новый цвет 3 (если это опечатка, замените на другой) */
+}
+
+/* Классы для текста */
+.text-custom-info {
+    color: var(--custom-info) !important;
+}
+
+.text-custom-primary {
+    color: var(--custom-primary) !important;
+}
+
+.text-custom-secondary {
+    color: var(--custom-secondary) !important;
+}
+
+/* Классы для фона */
+.bg-custom-info {
+    background-color: var(--custom-info) !important;
+}
+
+.bg-custom-primary {
+    background-color: var(--custom-primary) !important;
+}
+
+.bg-custom-secondary {
+    background-color: var(--custom-secondary) !important;
+}
+
+
+
