@@ -8,8 +8,17 @@
     position: relative;
 }
 
+.parallax-small {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    position: relative;
+}
+
 .hero-section {
-    background-image: url('../img/ambulance.jpg');
+    background-image: url('../img/ambulance.jpg');    
 }
 
 .topics-section {
@@ -18,6 +27,14 @@
 
 .registration-section {
     background-image: url('../img/conference-hall.jpg');
+}
+
+.overlay-light {
+    background-color: rgba(7,29,50,0.3);
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;*/
 }
 
 .overlay {
@@ -69,11 +86,11 @@
 /* Анимация пульсации для кнопки */
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        box-shadow: 0 0 10px rgba(58, 179, 206, 0.8);
     }
 
     50% {
-        box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+        box-shadow: 0 0 20px rgba(58, 179, 206 1);
     }
 }
 
