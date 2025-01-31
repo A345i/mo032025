@@ -25,7 +25,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
+    height: 100%;
 }
 
 /* Анимации */
@@ -86,7 +87,7 @@
 :root {
     --custom-info: #3ab3ce; /* Новый цвет 1 */
     --custom-primary: #071d32; /* Новый цвет 2 */
-    --custom-secondary: #134359; /* Новый цвет 3 (если это опечатка, замените на другой) */
+    --custom-secondary: #134359; /* Новый цвет 3 */
 }
 
 /* Классы для текста */
@@ -115,5 +116,25 @@
     background-color: var(--custom-secondary) !important;
 }
 
+.btn-custom-info {
+    background-color: var(--custom-info);
+    border-color: var(--custom-info);
+    color: white;
+}
 
+    .btn-custom-info:hover {
+        background-color: darken(#3ab3ce, 10%);
+        border-color: darken(#3ab3ce, 10%);
+    }
+
+.btn-custom-primary {
+    background-color: var(--custom-primary);
+    border-color: var(--custom-primary);
+    color: white;
+}
+
+    .btn-custom-primary:hover {
+        background-color: darken(#071d32, 10%);
+        border-color: darken(#071d32, 10%);
+    }
 
