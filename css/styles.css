@@ -1,3 +1,25 @@
+
+/* Подключение Regular */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400; /* Обычный вес */
+    font-style: normal;
+}
+
+/* Подключение Bold */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700; /* Жирный вес */
+    font-style: normal;
+}
+
+/* Применение шрифта */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Параллакс и базовые стили */
 .parallax {
     background-attachment: fixed;
