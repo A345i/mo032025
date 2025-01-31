@@ -161,8 +161,9 @@ body {
 }
 
     .btn-custom-info:hover {
-        background-color: darken(#3ab3ce, 10%);
-        border-color: darken(#3ab3ce, 10%);
+        background-color: #2a8fa5;
+        border-color: #2a8fa5;
+        color: #3ab3ce;
     }
 
 .btn-custom-primary {
@@ -172,7 +173,8 @@ body {
 }
 
     .btn-custom-primary:hover {
-        background-color: darken(#071d32, 10%);
-        border-color: darken(#071d32, 10%);
+        background-color: #061a2d;
+        border-color: #061a2d;
+        color: #071d32;
     }
 
