@@ -1,0 +1,40 @@
+{
+  "conference_videos": {
+    "hall_1": [
+      {
+        "title": "Название выступления 1 (Зал 1)",
+        "preview_image": "https://example.com/images/hall1_video1.jpg",
+        "video_url": "https://rutube.ru/play/embed/255f47e0a2273108c4a621424628da04"
+      },
+      {
+        "title": "Название выступления 2 (Зал 1)",
+        "preview_image": "https://example.com/images/hall1_video2.jpg",
+        "video_url": "https://rutube.ru/play/embed/355f47e0a2273108c4a621424628da04"
+      }
+    ],
+    "hall_2": [
+      {
+        "title": "Название выступления 1 (Зал 2)",
+        "preview_image": "https://example.com/images/hall2_video1.jpg",
+        "video_url": "https://rutube.ru/play/embed/455f47e0a2273108c4a621424628da04"
+      },
+      {
+        "title": "Название выступления 2 (Зал 2)",
+        "preview_image": "https://example.com/images/hall2_video2.jpg",
+        "video_url": "https://rutube.ru/play/embed/555f47e0a2273108c4a621424628da04"
+      }
+    ],
+    "hall_3": [
+      {
+        "title": "Название выступления 1 (Зал 3)",
+        "preview_image": "https://example.com/images/hall3_video1.jpg",
+        "video_url": "https://rutube.ru/play/embed/655f47e0a2273108c4a621424628da04"
+      },
+      {
+        "title": "Название выступления 2 (Зал 3)",
+        "preview_image": "https://example.com/images/hall3_video2.jpg",
+        "video_url": "https://rutube.ru/play/embed/755f47e0a2273108c4a621424628da04"
+      }
+    ]
+  }
+}
