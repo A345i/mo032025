@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вызов Подмосковья - 2025 | 1-й межрегиональный съезд специалистов скорой медицинской помощи с международным участием</title>
+    <meta name="keywords" content="съезд скорой медицинской помощи, конференция скорая помощь 2025, современная медицина, экстренная медицинская помощь, неотложная помощь, медицинская конференция, медицина катастроф, первая помощь, срочная медицинская помощь, НМО, медицинская трансляция, Красногорск, Минздрав, информационные технологии в медицине">
+    <meta name="description" content="1-й межрегиональный съезд специалистов скорой медицинской помощи с международным участием пройдет 24–25 апреля 2025 года в гибридном формате. Обсуждение современных подходов к оказанию экстренной медицинской помощи, актуальных клинических и организационных вопросов. Очное участие в Красногорске, онлайн-трансляция на платформе mts.link.ru. Бесплатная публикация тезисов. Регистрация обязательна до 17 апреля.">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <style>
+
+        /* Стили видео */
+        .bg-video-primary {
+            background-color: #071d32;
+        }
+
+        .bg-video-secondary {
+            background-color: #134359;
+        }
+
+        .bg-video-accent {
+            background-color: #3ab3ce;
+        }
+
+        .bg-video-accent-dark {
+            background-color: #2a8fa5;
+        }
+
+        .bg-video-dark-blue {
+            background-color: #061a2d;
+        }
+
+        .text-video-primary {
+            color: #071d32;
+        }
+
+        .text-video-secondary {
+            color: #134359;
+        }
+
+        .text-video-accent {
+            color: #3ab3ce;
+        }
+
+        .text-video-accent-dark {
+            color: #2a8fa5;
+        }
+
+        .text-video-dark-blue {
+            color: #061a2d;
+        }
+
+        /* Секция видео */
+        .video-gallery-section {
+            background: #f8f9fa;
+            padding: 3rem 0;
+            border-radius: 15px;
+            margin: 2rem auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: #071d32;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+            .section-title:after {
+                content: '';
+                position: absolute;
+                width: 60%;
+                height: 3px;
+                background: #3ab3ce;
+                bottom: -10px;
+                left: 20%;
+                border-radius: 3px;
+            }
+
+        .section-subtitle {
+            color: #134359;
+            font-weight: 400;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Табы */
+        .nav-tabs.video-tabs {
+            border-bottom: 2px solid rgba(7, 29, 50, 0.1);
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+            .nav-tabs.video-tabs .nav-link {
+                color: #061a2d;
+                font-weight: 500;
+                border: none;
+                padding: 0.75rem 1.5rem;
+                margin: 0 0.5rem;
+                border-radius: 50px;
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+                background-color: rgba(58, 179, 206, 0.1);
+            }
+
+                .nav-tabs.video-tabs .nav-link:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 3px;
+                    background: #3ab3ce;
+                    transition: all 0.3s ease;
+                }
+
+                .nav-tabs.video-tabs .nav-link:hover {
+                    color: #2a8fa5;
+                    background-color: rgba(58, 179, 206, 0.2);
+                }
+
+                .nav-tabs.video-tabs .nav-link.active {
+                    color: white;
+                    background-color: #3ab3ce;
+                    font-weight: 600;
+                    box-shadow: 0 5px 15px rgba(58, 179, 206, 0.3);
+                }
+
+                    .nav-tabs.video-tabs .nav-link.active:before {
+                        width: 100%;
+                    }
+
+        /* Карточки видео */
+        .video-card {
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            margin-bottom: 1.5rem;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            background: white;
+            position: relative;
+        }
+
+            .video-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .video-card:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(6, 26, 45, 0) 0%, rgba(6, 26, 45, 0.7) 100%);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 1;
+            }
+
+            .video-card:hover:before {
+                opacity: 1;
+            }
+
+        .video-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .video-card:hover .video-card-img {
+            transform: scale(1.05);
+        }
+
+        .video-card-body {
+            padding: 1.25rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .video-card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #071d32;
+            transition: color 0.3s ease;
+        }
+
+        .video-card:hover .video-card-title {
+            color: white;
+        }
+
+        .video-card-text {
+            color: #666;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .video-card:hover .video-card-text {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+            .play-icon i {
+                color: #3ab3ce;
+                font-size: 1.5rem;
+                margin-left: 5px;
+            }
+
+        .video-card:hover .play-icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        /* Модальное окно */
+        .modal-video-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+            background: #071d32;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+            .modal-video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+        .modal-content.video-modal {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .modal-header.video-modal {
+            background: #071d32;
+            color: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Заголовки залов */
+        .hall-title.video-hall {
+            margin: 1.5rem 0;
+            font-weight: 600;
+            color: #134359;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+            .hall-title.video-hall:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 60px;
+                height: 3px;
+                background: #3ab3ce;
+                border-radius: 3px;
+            }
+
+        /* Сообщение об отсутствии видео */
+        .no-videos.video-message {
+            text-align: center;
+            padding: 3rem;
+            color: #134359;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+            .no-videos.video-message i {
+                font-size: 3rem;
+                color: #3ab3ce;
+                margin-bottom: 1rem;
+                opacity: 0.7;
+            }
+
+        /* Лоадер */
+        .loader.video-loader {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .spinner.video-spinner {
+            width: 3rem;
+            height: 3rem;
+            border: 4px solid #3ab3ce;
+            border-top: 4px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .nav-tabs.video-tabs .nav-link {
+                padding: 0.5rem 1rem;
+                margin: 0 0.25rem;
+                font-size: 0.9rem;
+            }
+
+            .video-card-img {
+                height: 150px;
+            }
+
+            .section-header {
+                margin-bottom: 2rem;
+            }
+        }
+
+
+        /* Стили галереи */
+        .gallery-item {
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+            .gallery-item:hover {
+                transform: translateY(-5px);
+            }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: zoom-in;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        /* Стили модального окна */
+        .modal-body {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #modalImage {
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
+
+        .modal-navigation {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 20px;
+        }
+
+        .prev-btn, .next-btn {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            background: rgba(0,0,0,0.5);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .prev-btn:hover, .next-btn:hover {
+                opacity: 1;
+            }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .gallery-item {
+                height: 180px;
+            }
+
+            .prev-btn, .next-btn {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .btn-close {
+            filter: invert(1) grayscale(100%) brightness(200%);
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            z-index: 1050;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <div class="row align-items-center" data-aos="fade-down">
+
+                <div class="col-md-6">
+                    <h1 class="text-uppercase text-custom-info mb-1">
+                        <span>
+                            Вызов Подмосковья - 2025
+                        </span>
+                    </h1>
+                    <p class="fs-3 text-custom-primary mb-1">
+                        <span style="font-family: 'Times New Roman', serif;">
+                            I
+                        </span> межрегиональный съезд специалистов скорой медицинской помощи с международным участием
+                    </p>
+                </div>
+
+                <div class="col">
+                    <div class="text-center">
+
+                        <div class="h3 my-3 text-custom-primary">Мероприятие состоялось: </div>
+                        <div class="h2 my-3 text-custom-primary">24–25 апреля 2025 года</div>
+                        <a href="#" class="my-3 text-custom-primary">посмотреть программу</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--<section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://rutube.ru/play/embed/255f47e0a2273108c4a621424628da04"
+                                title="RuTube video"
+                                allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!-- Hero Section -->
+    <section class="parallax-small hero-section text-white">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="row p-2">
+                        <div class="col-6">
+                            <img class="img-fluid float-end p-2" data-aos="zoom-in" src="img/2.png" />
+                        </div>
+
+                        <div class="col-6">
+                            <img class="img-fluid p-2" data-aos="zoom-in" src="img/1.png" />
+                        </div>
+
+                        <div class="col-6">
+                            <img class="img-fluid float-end p-2" data-aos="zoom-in" src="img/4.png" />
+                        </div>
+
+                        <div class="col-6">
+                            <img class="img-fluid p-2" data-aos="zoom-in" src="img/3.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-grid align-items-center" data-aos="fade-in">
+
+                    <div class="py-4">
+
+                        <h4><i class="fas fa-users text-white me-2"></i>Под эгидой</h4>
+                        <ul>
+                            <li>Правительства Московской области</li>
+                            <li>Министерства здравоохранения Российской Федерации</li>
+                            <li>Министерства здравоохранения Московской области</li>
+                            <li>ГБУЗ МО «Московской областной станции скорой медицинской помощи»</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!--VIDEO-->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+            <section class="video-gallery-section">
+                <div class="section-header">
+                    <h2 class="section-title">Видеозаписи выступлений</h2>
+                    <p class="section-subtitle">Просмотрите записи выступлений с нашей конференции. Выберите зал и нажмите на видео для просмотра.</p>
+                </div>
+
+                <!-- Tabs for halls -->
+                <ul class="nav nav-tabs video-tabs" id="hallTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="hall1-tab" data-bs-toggle="tab" data-bs-target="#hall1" type="button" role="tab">
+                            <i class="fas fa-video me-2"></i>Зал 1
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="hall2-tab" data-bs-toggle="tab" data-bs-target="#hall2" type="button" role="tab">
+                            <i class="fas fa-video me-2"></i>Зал 2
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="hall3-tab" data-bs-toggle="tab" data-bs-target="#hall3" type="button" role="tab">
+                            <i class="fas fa-video me-2"></i>Зал 3
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab content -->
+                <div class="tab-content py-3" id="hallTabsContent">
+                    <div class="tab-pane fade show active" id="hall1" role="tabpanel" aria-labelledby="hall1-tab">
+                        <h3 class="hall-title video-hall">Выступления в зале 1</h3>
+                        <div class="row" id="hall1-videos-container">
+                            <div class="loader video-loader">
+                                <div class="spinner video-spinner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="hall2" role="tabpanel" aria-labelledby="hall2-tab">
+                        <h3 class="hall-title video-hall">Выступления в зале 2</h3>
+                        <div class="row" id="hall2-videos-container">
+                            <div class="loader video-loader">
+                                <div class="spinner video-spinner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="hall3" role="tabpanel" aria-labelledby="hall3-tab">
+                        <h3 class="hall-title video-hall">Выступления в зале 3</h3>
+                        <div class="row" id="hall3-videos-container">
+                            <div class="loader video-loader">
+                                <div class="spinner video-spinner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content video-modal">
+                <div class="modal-header video-modal">
+                    <h5 class="modal-title" id="videoModalLabel">Просмотр видео</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-video-container" id="modal-video-container">
+                        <!-- Video iframe will be inserted here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-info" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-1"></i> Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Секция галереи -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Фотогалерея 2025</h2>
+
+            <div class="row g-3" id="photoGallery">
+                <!-- Фото будут здесь -->
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="loadMore" class="btn btn-primary">Показать еще</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body d-flex justify-content-center align-items-center p-0" style="min-height: 80vh;">
+                    <img src="" class="img-fluid mx-auto d-block" id="modalImage" alt="" style="max-height: 80vh; width: auto; max-width: 100%;">
+                </div>
+                <div class="modal-navigation d-flex justify-content-between align-items-center px-3">
+                    <button class="btn btn-secondary prev-btn rounded-circle" id="prevPhoto">❮</button>
+                    <button class="btn btn-secondary next-btn rounded-circle" id="nextPhoto">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-custom-secondary text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-envelope me-2"></i>Контакты</h5>
+                    <p>Email: <a class="link-light" href="mailto:conference@mo03.ru">conference@mo03.ru</a></p>
+                    <h5><i class="fas fa-briefcase me-2"></i>Организационный комитет</h5>
+                    <p>
+                        <a href="https://mz.mosreg.ru/" target="_blank" class="link-light"> Министерство здравоохранения Московской области</a>
+
+                        <br />
+                        <a href="https://mo03.ru/" target="_blank" class="link-light"> ГБУЗ МО «Московская областная станция скорой медицинской помощи»</a></br>
+
+
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fa-solid fa-sliders me-2"></i>Технический организатор</h5>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.profexpertus.ru" text-white target="_blank">
+                                <img style="max-width: 150px" src="img/profexpertus_logo_white.svg" alt="АНО Профэкспертус — Центр развития специалистов" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="https://www.profexpertus.ru" class="link-light" target="_blank">
+                                АНО Профэкспертус — Центр развития специалистов
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Конфигурация
+        const galleryConfig = {
+            totalPhotos: 300,
+            perLoad: 6,
+            thumbsPath: 'img/photo2025/thumbs/',
+            fullPath: 'img/photo2025/full/'
+        };
+
+        // Инициализация после загрузки DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            const gallery = document.getElementById('photoGallery');
+            const loadMoreBtn = document.getElementById('loadMore');
+            const modalEl = document.getElementById('galleryModal');
+            const modal = new bootstrap.Modal(modalEl);
+            const modalImage = document.getElementById('modalImage');
+            const prevBtn = document.getElementById('prevPhoto');
+            const nextBtn = document.getElementById('nextPhoto');
+
+            let loadedPhotos = [];
+            let currentPhotoIndex = 0;
+
+            // Загрузка фотографий
+            function loadPhotos() {
+                const fragment = document.createDocumentFragment();
+                const startId = loadedPhotos.length + 1;
+                const endId = Math.min(startId + galleryConfig.perLoad - 1, galleryConfig.totalPhotos);
+
+                for (let i = startId; i <= endId; i++) {
+                    const col = document.createElement('div');
+                    col.className = 'col-md-4 col-sm-6 col-12 gallery-col';
+
+                    col.innerHTML = `
+                    <div class="gallery-item shadow">
+                      <img src="${galleryConfig.thumbsPath}photo${i}.jpg"
+                           class="gallery-img"
+                           loading="lazy"
+                           alt="Фото ${i}"
+                           data-id="${i}">
+                    </div>
+                  `;
+
+                    fragment.appendChild(col);
+                    loadedPhotos.push(i);
+                }
+
+                gallery.appendChild(fragment);
+                initGalleryEvents();
+
+                if (loadedPhotos.length >= galleryConfig.totalPhotos) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            }
+
+            // Инициализация событий
+            function initGalleryEvents() {
+                document.querySelectorAll('.gallery-img').forEach(img => {
+                    img.addEventListener('click', function () {
+                        currentPhotoIndex = loadedPhotos.indexOf(parseInt(this.dataset.id));
+                        updateModalImage();
+                        modal.show();
+                    });
+                });
+            }
+
+            // Обновление изображения в модальном окне
+            function updateModalImage() {
+                const photoId = loadedPhotos[currentPhotoIndex];
+                const img = new Image();
+                img.src = `${galleryConfig.fullPath}photo${photoId}.jpg`;
+
+                img.onload = function () {
+                    modalImage.src = this.src;
+                    modalImage.alt = `Фото ${photoId}`;
+
+                    // Автоматическое масштабирование
+                    const isLandscape = this.width > this.height;
+
+                    modalImage.style.maxWidth = isLandscape ? '90%' : 'auto';
+                    modalImage.style.maxHeight = isLandscape ? '80vh' : '90vh';
+                    modalImage.style.width = isLandscape ? 'auto' : '80%';
+                };
+            }
+
+            // Навигация
+            prevBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                currentPhotoIndex = (currentPhotoIndex - 1 + loadedPhotos.length) % loadedPhotos.length;
+                updateModalImage();
+            });
+
+            nextBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                currentPhotoIndex = (currentPhotoIndex + 1) % loadedPhotos.length;
+                updateModalImage();
+            });
+
+            // Кнопка "Загрузить еще"
+            loadMoreBtn.addEventListener('click', loadPhotos);
+
+            // Первая загрузка
+            loadPhotos();
+
+            // Закрытие по клику вне изображения
+            modalEl.addEventListener('click', function (e) {
+                if (e.target === modalEl) {
+                    modal.hide();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // Функция для загрузки JSON
+        async function loadVideoData() {
+            try {
+                const response = await fetch('videodata.json');
+                if (!response.ok) {
+                    throw new Error('Не удалось загрузить данные');
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Ошибка загрузки данных:', error);
+                showError();
+                return null;
+            }
+
+        }
+
+        
+
+        // Показать сообщение об ошибке
+        function showError() {
+            const containers = [
+                document.getElementById('hall1-videos-container'),
+                document.getElementById('hall2-videos-container'),
+                document.getElementById('hall3-videos-container')
+            ];
+
+            containers.forEach(container => {
+                container.innerHTML = `
+                        <div class="no-videos video-message">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>Ошибка загрузки данных</h4>
+                            <p>Не удалось загрузить список видео. Пожалуйста, попробуйте позже.</p>
+                        </div>
+                    `;
+            });
+        }
+
+        // Функция для загрузки видео для конкретного зала
+        function loadVideosForHall(hallId, videos) {
+            const container = document.getElementById(`${hallId}-videos-container`);
+
+            if (!videos || videos.length === 0) {
+                container.innerHTML = `
+                        <div class="no-videos video-message">
+                            <i class="fas fa-video-slash"></i>
+                            <h4>Видео отсутствуют</h4>
+                            <p>Для этого зала пока нет доступных видеозаписей.</p>
+                        </div>
+                    `;
+                return;
+            }
+
+            container.innerHTML = '';
+
+            videos.forEach((video, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-6 col-lg-4';
+
+                const card = document.createElement('div');
+                card.className = 'card video-card';
+                card.dataset.videoUrl = video.video_url;
+                card.dataset.videoTitle = video.title;
+
+                card.innerHTML = `
+                        <div class="position-relative">
+                            <img src="${video.preview_image}" class="card-img-top video-card-img" alt="${video.title}" loading="lazy">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="card-body video-card-body">
+                            <h5 class="card-title video-card-title">${video.title}</h5>
+                            <p class="card-text video-card-text">Зал ${hallId.replace('hall', '')}</p>
+                        </div>
+                    `;
+
+                card.addEventListener('click', function () {
+                    openVideoModal(this.dataset.videoUrl, this.dataset.videoTitle);
+                });
+
+                col.appendChild(card);
+                container.appendChild(col);
+            });
+        }
+
+        // Функция для открытия модального окна с видео
+        function openVideoModal(videoUrl, videoTitle) {
+            const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+            const modalTitle = document.getElementById('videoModalLabel');
+            const videoContainer = document.getElementById('modal-video-container');
+
+            // Установить заголовок
+            modalTitle.textContent = videoTitle;
+
+            // Очистить предыдущее видео, если было
+            videoContainer.innerHTML = '';
+
+            // Создать новый iframe
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', videoUrl);
+            iframe.setAttribute('title', 'RuTube video');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+
+            videoContainer.appendChild(iframe);
+
+            // Показать модальное окно
+            modal.show();
+
+            // Очистить iframe при закрытии модального окна
+            document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+                videoContainer.innerHTML = '';
+            });
+        }
+
+        // Инициализация галереи при загрузке DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            // Загрузить данные
+            loadVideoData().then(function (videoData) {
+                if (videoData) {
+                    // Загрузить видео для каждого зала
+                    loadVideosForHall('hall1', videoData.conference_videos.hall_1);
+                    loadVideosForHall('hall2', videoData.conference_videos.hall_2);
+                    loadVideosForHall('hall3', videoData.conference_videos.hall_3);
+                }
+            });
+
+            // Добавить обработчики событий для вкладок
+            document.querySelectorAll('[data-bs-toggle="tab"]').forEach(function (tab) {
+                tab.addEventListener('shown.bs.tab', function (event) {
+                    // Можно добавить ленивую загрузку по необходимости
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
