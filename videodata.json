@@ -2,26 +2,62 @@
   "conference_videos": {
     "hall_1": [
       {
-        "title": "Название выступления 1 (Зал 1)",
-        "preview_image": "img/videopreview/videodata1.jpg",
-        "video_url": "https://rutube.ru/play/embed/255f47e0a2273108c4a621424628da04"
+        "title": "Аксентьев С.Б. Возможные ошибки в лечении ОКС на догоспитальном этапе",
+        "preview_image": "img/videopreview/aksentev.jpg",
+        "video_url": "https://rutube.ru/play/embed/7e76139d5cfcdf34aa41d28ebcc01802"
       },
       {
-        "title": "Название выступления 2 (Зал 1)",
-        "preview_image": "img/videopreview/videodata1.jpg",
-        "video_url": "https://rutube.ru/play/embed/355f47e0a2273108c4a621424628da04"
+        "title": "Бицуева А.В. Сахарный диабет у детей первых трех лет жизни- сложности оценки тяжести состояния",
+        "preview_image": "img/videopreview/bicueva.jpg",
+        "video_url": "https://rutube.ru/play/embed/603165e56aa5ea1a7cc6c022ba749c19"
       }
     ],
+{
+        "title": "Крушельницкий А.А. Отравление фенобарбиталом. Клинический случай",
+        "preview_image": "img/videopreview/krush.jpg",
+        "video_url": "https://rutube.ru/play/embed/70663ff9e763ce1323b58efc62824e99"
+      }, 
+{
+        "title": "Меркулова И.А ЭКГ при остром коронарном синдроме- как не пропустить инфаркт",
+        "preview_image": "img/videopreview/merkul.jpg",
+        "video_url": "https://rutube.ru/play/embed/fd39a91b09ad89dc9c7918677ec11898"
+      }, 
+{
+        "title": "Новиков Д.В. Основы интенсивной терапии критических состояний на догоспитальном этапе",
+        "preview_image": "img/videopreview/novikov.jpg",
+        "video_url": "https://rutube.ru/play/embed/fe28e3d5a919c1bef4a503dba6c1826b"
+      }, 
+{
+        "title": "Пак Л.А. Острая неврология. Аутоиммунная энцефалопатия Кинсбурна. Клинический случай",
+        "preview_image": "img/videopreview/pak.jpg",
+        "video_url": "https://rutube.ru/play/embed/efcb7f83976eb271300fca8e32f8f18a"
+      }, 
+{
+        "title": "Паснова Е.В. Система цветовой кодировки - говорим на одном языке",
+        "preview_image": "img/videopreview/pasnova.jpg",
+        "video_url": "https://rutube.ru/play/embed/555f47e0a2273108c4a621424628da04"
+      }, 
+{
+        "title": "Серебренников И.И. Фибрилляция предсердий",
+        "preview_image": "img/videopreview/seberyannikov.jpg",
+        "video_url": "https://rutube.ru/play/embed/0da33c3abb02412a606b3ebad308c3ae"
+      }, 
+{
+        "title": "Федоров П.В. Коморбидность сочетанной травмы при попытке суицида. Клинический случай",
+        "preview_image": "img/videopreview/fedorov.jpg",
+        "video_url": "https://rutube.ru/play/embed/fbc018faae533158407fcef72c50f347"
+      }, 
+{
+        "title": "Фурман О.Э. Маски инсульта",
+        "preview_image": "img/videopreview/furman.jpg",
+        "video_url": "https://rutube.ru/play/embed/59ef5edd24cc74d6b83a8a2f6406e71d"
+      }
+], 
     "hall_2": [
-      {
-        "title": "Название выступления 1 (Зал 2)",
-        "preview_image": "img/videopreview/videodata1.jpg",
-        "video_url": "https://rutube.ru/play/embed/455f47e0a2273108c4a621424628da04"
-      },
       {
         "title": "Название выступления 2 (Зал 2)",
         "preview_image": "img/videopreview/videodata1.jpg",
-        "video_url": "https://rutube.ru/play/embed/555f47e0a2273108c4a621424628da04"
+        "video_url": "https://rutube.ru/play/embed/30e9455d980ce6bd581c83a05a94d3e4"
       }
     ],
     "hall_3": [
