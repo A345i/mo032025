@@ -136,14 +136,74 @@
     ],
     "hall_3": [
       {
-        "title": "Название выступления 1 (Зал 3)",
-        "preview_image": "img/videopreview/videodata1.jpg",
-        "video_url": "https://rutube.ru/play/embed/655f47e0a2273108c4a621424628da04"
+        "title": "Акалаев Р.Н. Трансформация службы скорой медицинской помощи в Республике Узбекистан",
+        "preview_image": "img/videopreview/akalaev.jpg",
+        "video_url": "https://rutube.ru/play/embed/3866e356232320d75da601ede2f8fd6c"
       },
       {
-        "title": "Название выступления 2 (Зал 3)",
-        "preview_image": "img/videopreview/videodata1.jpg",
-        "video_url": "https://rutube.ru/play/embed/755f47e0a2273108c4a621424628da04"
+        "title": "Бабунашвили А.М. Анализ 7-летнего опыта работы клиники ЦЭЛТ со службой СМП Московской области по лечению экстренных состоянии в сердечно сосудистой патологии",
+        "preview_image": "img/videopreview/babunashvili.jpg",
+        "video_url": "https://rutube.ru/play/embed/7acfb52c0e598d5406f63fd79e056c7f"
+      },
+      {
+        "title": "Володин А.С. Современная модель ликвидации МСП-ЧС на территории Московской области. Эффективные инновационные технологии оказания догоспитальной помощи",
+        "preview_image": "img/videopreview/volodin.jpg",
+        "video_url": "https://rutube.ru/play/embed/95542e4b2c42ba432691e3f9eb554adc"
+      },
+      {
+        "title": "Егоров Е.О. Взаимодействие спасательных служб и учреждений здравоохранения Московской области в ходе ликвидации последствий ЧС",
+        "preview_image": "img/videopreview/egorov.jpg",
+        "video_url": "https://rutube.ru/play/embed/8c3525cc10002bd95650fb631a324ca7"
+      },
+      {
+        "title": "Жинко А.Е. Перспективы развития скорой помощи Белоруссии на примере станции скорой медицинской помощи города Минск",
+        "preview_image": "img/videopreview/jinko.jpg",
+        "video_url": "https://rutube.ru/play/embed/56c70d78217ac2b18261077da433e944"
+      },
+      {
+        "title": "Жукова А.Э. Обучение вопросам первой помощи в системе дополнительного профессионального образования",
+        "preview_image": "img/videopreview/jukova.jpg",
+        "video_url": "https://rutube.ru/play/embed/56e93cf6f743334c6e5e3a29c7a53394"
+      },
+      {
+        "title": "Игнатьев П.Ю. Первая помощь. Новое в законодательстве. Настоящее и будущее в Московской области",
+        "preview_image": "img/videopreview/ignatiev.jpg",
+        "video_url": "https://rutube.ru/play/embed/6e59a63adfd609d3dcbcfe4e3aef2d24"
+      },
+      {
+        "title": "Ильин П.О. Российское общество первой помощи и Подмосковье. Мы вместе! Деятельность регионального отделения",
+        "preview_image": "img/videopreview/ilyin.jpg",
+        "video_url": "https://rutube.ru/play/embed/cf416c8d513639d0bb97d0ef643e5dbd"
+      },
+      {
+        "title": "Кещьян Л.В. Будущим мамам Подмосковья поВЕЗЁТ!",
+        "preview_image": "img/videopreview/keshyan.jpg",
+        "video_url": "https://rutube.ru/play/embed/aeecfbd61dd1006312b7987fd2f13153"
+      },
+      {
+        "title": "Печерей И.О.Анализ судебной практики по делам, связанным с оказанием скорой медицинской помощи",
+        "preview_image": "img/videopreview/pecherey.jpg",
+        "video_url": "https://rutube.ru/play/embed/f78168f9c62e3b58b4a22a979b3ec164"
+      },
+      {
+        "title": "Румянцева Н.В. Первая помощь в условиях контртеррористической операции- опыт волонтёрской деятельности",
+        "preview_image": "img/videopreview/rumyantseva.jpg",
+        "video_url": "https://rutube.ru/play/embed/12df0764a019fdcb6e43e03042a4e29b"
+      },
+      {
+        "title": "Сарманаев С.Х. Информационно консультативная токсикологическая поддержка экстренного оказания медицинской помощи при химической травме на догоспитальном этапе",
+        "preview_image": "img/videopreview/sarmanaev.jpg",
+        "video_url": "https://rutube.ru/play/embed/c2e120b124df5082e803a98679c1d5bb"
+      },
+      {
+        "title": "Тельцова В.И. Информационные технологии в перспективном развитии скорой медицинской помощи",
+        "preview_image": "img/videopreview/teltsova.jpg",
+        "video_url": "https://rutube.ru/play/embed/982d201942db76c6982212d47ae30ba2"
+      },
+      {
+        "title": "Чернов А.Ю. Интеграция системы «Спасатель Рядом» в систему здравоохранения",
+        "preview_image": "img/videopreview/chernov.jpg",
+        "video_url": "https://rutube.ru/play/embed/a51f71a2cd2d5db7789f8a7030eb3ba6"
       }
     ]
   }
