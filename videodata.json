@@ -51,12 +51,87 @@
         "preview_image": "img/videopreview/furman.jpg",
         "video_url": "https://rutube.ru/play/embed/59ef5edd24cc74d6b83a8a2f6406e71d"
       }
-], 
+],
     "hall_2": [
       {
-        "title": "Название выступления 2 (Зал 2)",
-        "preview_image": "img/videopreview/videodata1.jpg",
-        "video_url": "https://rutube.ru/play/embed/30e9455d980ce6bd581c83a05a94d3e4"
+        "title": "Багненко С.Ф. Состояние, перспектива и задачи развития скорой медицинской помощи в субъектах Российской Федерации",
+        "preview_image": "img/videopreview/bagnenko.jpg",
+        "video_url": "https://rutube.ru/play/embed/f05c9e35d56aaefb9a3438d5b9a114ee"
+      },
+      {
+        "title": "Вечорко В.И.Современные принципы организации приемного отделения многопрофильного стационара",
+        "preview_image": "img/videopreview/vechorko.jpg",
+        "video_url": "https://rutube.ru/play/embed/9aaff4515ef1d2357d514064936b2892"
+      },
+      {
+        "title": "Закиров Р.Р. Медицинская эвакуация пострадавших при возникновении очагов санитарных потерь",
+        "preview_image": "img/videopreview/zakirov.jpg",
+        "video_url": "https://rutube.ru/play/embed/77a6e519cc8d0f78265fe30c142d370c"
+      },
+      {
+        "title": "Зимин А.А. Клинические шкалы при оказании экстренной медицинской помощи. Актуальность и особенности практического применения",
+        "preview_image": "img/videopreview/zimin.jpg",
+        "video_url": "https://rutube.ru/play/embed/24bb824537293a85937e1a9460c5240b"
+      },
+      {
+        "title": "Зинченко Д.О. Экстренная психологическая помощь, оказываемая пациентам сотрудниками линейных бригад",
+        "preview_image": "img/videopreview/zinchenko.jpg",
+        "video_url": "https://rutube.ru/play/embed/31452a217606ad040ed8f7dede3b0258"
+      },
+      {
+        "title": "Иванова М.П. Контроль кровотечения и кровообращения- принципы критической медицины",
+        "preview_image": "img/videopreview/ivanova.jpg",
+        "video_url": "https://rutube.ru/play/embed/9ed0fc3beae8a2f3ecce3475025e5f91"
+      },
+      {
+        "title": "Илюхин С.В. Применение устройств для автоматической компрессии грудной клетки",
+        "preview_image": "img/videopreview/ilyuhin.jpg",
+        "video_url": "https://rutube.ru/play/embed/2910e8a66f7d28f2fa9b262e3cc01310"
+      },
+      {
+        "title": "Маслов К.Н. Опыт внедрения системы менеджмента качества в службе скорой медицинской помощи Московской области",
+        "preview_image": "img/videopreview/maslov.jpg",
+        "video_url": "https://rutube.ru/play/embed/555b682187c4d64172262944a4886e9f"
+      },
+      {
+        "title": "Нардит В.В. Оказание скорой медицинской помощи пациентам с высокоэнергетической травмой",
+        "preview_image": "img/videopreview/nardit.jpg",
+        "video_url": "https://rutube.ru/play/embed/c30721020217dcd81e1dd5e79247c6f1"
+      },
+      {
+        "title": "Пиковский В.Ю. Внебольничная остановка кровообращения. Тактические решения для службы скорой медицинской помощи",
+        "preview_image": "img/videopreview/pikovskiy.jpg",
+        "video_url": "https://rutube.ru/play/embed/aef803cca1246e9389618185f3787a58"
+      },
+      {
+        "title": "Пырегов А.В. Менеджмент крови пациента в акушерстве- взгляд анестезиолога реаниматолога",
+        "preview_image": "img/videopreview/pyiregov.jpg",
+        "video_url": "https://rutube.ru/play/embed/c388e27746c92f96e627931efc9236a2"
+      },
+      {
+        "title": "Рабинович Р.М. Использование технологий point of care на догоспитальном этапе",
+        "preview_image": "img/videopreview/rabinovich.jpg",
+        "video_url": "https://rutube.ru/play/embed/c07fb4a7cf00d4742c4d1332dad8a2df"
+      },
+      {
+        "title": "Руденко М.В. Новое в сердечно-легочной реанимации",
+        "preview_image": "img/videopreview/rudenko.jpg",
+        "video_url": "https://rutube.ru/play/embed/99bc0db6ed36cba9ccee8f56d1b59b4d"
+      },
+      {
+        "title": "Сутормин М.В. Лечение острой цереброваскулярной патологии- от классики к инновациям",
+        "preview_image": "img/videopreview/sutormin.jpg",
+        "video_url": "https://rutube.ru/play/embed/74d06eaf678fcd081aa416dd78635a18"
+      },
+      {
+        "title": "Терещенко С.Н. Смена парадигмы в отношении тромболитической терапии у пациентов с ИМпST",
+        "preview_image": "img/videopreview/tereshenko.jpg",
+        "video_url": "https://rutube.ru/play/embed/09eca59c66148079b1dcbc8a7f1ed0c4"
+      },
+      {
+        "title": "Шугинин И.О. Преэклампсия и эклампсия. Алгоритм действий на догоспитальном этапе",
+        "preview_image": "img/videopreview/shuginin.jpg",
+        "video_url": "https://rutube.ru/play/embed/f8f3ee7dd3a075ca4a76b7250a664f0f"
       }
     ],
     "hall_3": [
