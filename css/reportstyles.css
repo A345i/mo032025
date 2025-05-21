@@ -1,0 +1,360 @@
+/* Применение шрифта */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.reporttxt {
+    color: #2a8fa5;
+}
+
+/* Параллакс и базовые стили */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+}
+
+.parallax-small {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    position: relative;
+}
+
+.hero-section {
+    background-image: url('../img/ambulance.jpg');    
+}
+
+.topics-section {
+    background-image: url('../img/doctors-team.jpg');
+}
+
+.registration-section {
+    background-image: url('../img/conference-hall.jpg');
+}
+
+.overlay-light {
+    background-color: rgba(7,29,50,0.3);
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;*/
+}
+
+.overlay {
+    background-color: rgba(7,29,50,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.overlay-b {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Hover-эффекты */
+.btn-hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .btn-hover-effect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+/* Тени для текста */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Иконки */
+.icon-large {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Анимация пульсации для кнопки */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(58, 179, 206, 0.8);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(58, 179, 206 1);
+    }
+}
+
+.highlight-btn {
+    border: 2px solid #f00;
+    animation: pulse 1.5s infinite;
+}
+
+/* Новые цвета */
+:root {
+    --custom-info: #3ab3ce; /* Новый цвет 1 */
+    --custom-primary: #071d32; /* Новый цвет 2 */
+    --custom-secondary: #134359; /* Новый цвет 3 */
+}
+
+/* Классы для текста */
+.text-custom-info {
+    color: var(--custom-info) !important;
+}
+
+.text-custom-primary {
+    color: var(--custom-primary) !important;
+}
+
+.text-custom-secondary {
+    color: var(--custom-secondary) !important;
+}
+
+/* Классы для фона */
+.bg-custom-info {
+    background-color: var(--custom-info) !important;
+}
+
+.bg-custom-primary {
+    background-color: var(--custom-primary) !important;
+}
+
+.bg-custom-secondary {
+    background-color: var(--custom-secondary) !important;
+}
+
+.btn-custom-info {
+    background-color: var(--custom-info);
+    border-color: var(--custom-info);
+    color: white;
+}
+
+    .btn-custom-info:hover {
+        background-color: #2a8fa5;
+        border-color: #2a8fa5;
+        color: #3ab3ce;
+    }
+
+.btn-custom-primary {
+    background-color: var(--custom-primary);
+    border-color: var(--custom-primary);
+    color: white;
+}
+
+    .btn-custom-primary:hover {
+        background-color: #061a2d;
+        border-color: #061a2d;
+        color: #071d32;
+    }
+
+
+
+/*Инструкция для онлайн-участников*/
+
+.step-badge {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bg-custom-info {
+    background-color: #17a2b8; /* или ваш фирменный цвет */
+}
+
+.text-orange {
+    color: #fd7e14;
+}
+
+.step {
+    border-left: 3px solid #dee2e6;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+    .step:hover {
+        border-left-color: #134359;
+    }
+
+.support-box {
+    border-left: 4px solid #0d6efd;
+}
+
+/*Программа*/
+
+.event-time {
+    font-weight: bold;
+    color: var(--custom-secondary);
+}
+
+.event-title {
+    font-weight: bold;
+    color: var(--custom-primary);
+}
+
+.event-speaker {
+    font-style: italic;
+    color: #555;
+}
+
+.hall-title {
+    background-color: var(--custom-secondary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.session-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-left: 5px solid var(--custom-info);
+    border-radius: 0.375rem; /* Bootstrap's default rounded corners */
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.075);
+}
+
+.section-title {
+    color: var(--custom-primary);
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.icon-large {
+    font-size: 1.5em; /* Make title icons larger */
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.speaker-location {
+    font-size: 0.9em;
+    color: #6c757d; /* Bootstrap's text-muted color */
+}
+
+.break-session {
+    background-color: #e9ecef; /* Light grey for breaks */
+    border-left: 5px solid #6c757d; /* Grey border for breaks */
+    text-align: center;
+    font-weight: bold;
+}
+
+.master-class-session {
+    background-color: #fff3cd; /* Light yellow for master classes */
+    border-left: 5px solid #ffc107; /* Warning color border */
+    text-align: center;
+    font-weight: bold;
+}
+
+.commercial-note {
+    font-size: 0.8em;
+    color: #6c757d; /* Danger color for notes */
+    margin-top: 0.1rem;
+}
+
+/* Style for active tab */
+.nav-tabs .nav-link.active {
+    color: var(--custom-primary);
+    background-color: #ffffff;
+    border-color: #dee2e6 #dee2e6 #ffffff;
+    font-weight: bold;
+}
+/* Style for inactive tabs */
+.nav-tabs .nav-link {
+    color: var(--custom-secondary);
+    border: 1px solid transparent;
+    border-top-left-radius: .375rem; /* Match card radius */
+    border-top-right-radius: .375rem;
+}
+
+    .nav-tabs .nav-link:hover {
+        border-color: #e9ecef #e9ecef #dee2e6;
+        background-color: #e9ecef;
+    }
+
+/* Add padding to tab content */
+.tab-content {
+    padding-top: 1.5rem;
+}
+
+/*Спикеры*/
+.speaker-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-left: 5px solid var(--custom-secondary); /* Use secondary color for speaker cards */
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem; /* Add space between cards */
+    box-shadow: 0 2px 4px rgba(0,0,0,.075);
+    height: 100%; /* Ensure cards in the same row have equal height */
+}
+
+    .speaker-card .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .speaker-card .card-title {
+        color: var(--custom-primary);
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+    }
+
+    .speaker-card .card-text {
+        color: #495057; /* Slightly darker text for description */
+        font-size: 0.95em;
+        flex-grow: 1; /* Allow description to take available space */
+        margin-bottom: 0.75rem;
+    }
+
+    .speaker-card .speaker-location {
+        color: #6c757d; /* Bootstrap's text-muted color */
+        font-size: 0.9em;
+        margin-top: auto; /* Push location to the bottom */
+    }
+
+.icon-large {
+    font-size: 1.5em;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.speaker-icon {
+    margin-right: 0.5rem;
+    color: var(--custom-secondary);
+    width: 18px; /* Align icons */
+    text-align: center;
+}
+
+.location-icon {
+    margin-right: 0.5rem;
+    color: var(--custom-info);
+}
